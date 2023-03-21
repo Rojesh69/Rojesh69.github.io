@@ -1,36 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Personal Portfolio Website</title>
-    <!----CSS link----->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Rojesh Bairaili's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="hero">
+    <header>
+      <h1>Rojesh Bairaili</h1>
       <nav>
-        <img src="./img/logo.png" class="logo" />
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#" class="btn">Resume</a>
       </nav>
-
-      <div class="content">
-        <span class="title">Freelance Web Developer</span>
-        <h1>Hello, I’m <span>Rojesh</span></h1>
-        <p>
-          I’m working on a professional, visually sophisticated and
-          technologically proficient, responsive and multi-functional React
-          Components.
-        </p>
-        <a href="#" class="btn">Download CV</a>
-      </div>
-    </div>
+    </header>
+    
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief description about yourself and your professional background here.</p>
+      </section>
+      
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Skill 1</li>
+          <li>Skill 2</li>
+          <li>Skill 3</li>
+          <li>Skill 4</li>
+        </ul>
+      </section>
+      
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+          <li><a href="#">Project 3</a></li>
+          <li><a href="#">Project 4</a></li>
+        </ul>
+      </section>
+      
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <input type="submit" value="Send">
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Rojesh Bairaili</p>
+    </footer>
   </body>
 </html>
